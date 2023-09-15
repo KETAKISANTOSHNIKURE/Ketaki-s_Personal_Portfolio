@@ -3,11 +3,19 @@ import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+  // Split the description into an array of bullet points
+  const bulletPoints = description.split("\n").filter((point) => point.trim() !== "");
+
   return (
-    <div>
+    <div className="shadow-lg  bg-gradient-to-br from-primary-500 to-secondary-500 rounded-lg bg-gray-200 p-1 shadow-lg shadow-slate-600 ">
       <div
-        className="h-52 md:h-72 rounded-t-xl relative group"
-        style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
+        className="h-52 md:h-40 rounded-t-xl relative group "
+        style={{
+          background: `url(${imgUrl})`,
+          backgroundSize: "contain", // Change this line to set background size to "contain"
+          backgroundPosition: "center center", // Center the image
+          backgroundRepeat: "no-repeat", // Prevent image repetition
+        }}
       >
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
           <Link
@@ -24,9 +32,16 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           </Link>
         </div>
       </div>
-      <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
+      <div className="text-white rounded-b-xl mt-3 bg-[#181818] py-6 px-4">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-[#ADB7BE]">{description}</p>
+        {/* Render bullet points */}
+        <ul className="list-disc pl-5 mb-0">
+          {bulletPoints.map((point, index) => (
+            <li key={index} className="text-[#ADB7BE]">
+              {point}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

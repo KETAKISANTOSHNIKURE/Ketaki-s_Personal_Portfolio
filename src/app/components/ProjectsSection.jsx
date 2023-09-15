@@ -7,57 +7,59 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
+    title: "PDetectAI APP",
+    description: "PDetectAI utilizes machine learning, specifically the K-Nearest Neighbors (KNN) algorithm, to identify early-stage Parkinson's Disease through voice input. It processes voice data via Praat software and performs calculations using Python, leveraging scikit-learn and pickle libraries.",
+    image: "/images/projects/11.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/KETAKISANTOSHNIKURE/PDetect_AI",
+    previewUrl: "https://sakshiwalode28-parkinson-s-disease-detection-system-app-56ifd7.streamlit.app/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Portfolio Website",
+    description: "Welcome to my personal portfolio, a dynamic, visually engaging display of my web development skills, experiences, and passion. Built using Next.js and adorned with Tailwind CSS, it embodies my dedication to crafting both functional and aesthetically pleasing websites.",
+    image: "/images/projects/15.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/KETAKISANTOSHNIKURE/jenkins_CI-CD_Project",
     previewUrl: "/",
   },
+  
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Basic Banking  Application",
+    description: "The Basic Banking System is a Android Application designed to facilitate banking transactions and provide essential banking services to users. Tech Stack : Front end- Html, Css, Javascript, Bootstrap; Back end- Php, Database, MySQL",
+    image: "/images/projects/13.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/KETAKISANTOSHNIKURE/Banking_App",
+    previewUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7000008098664886272/",
   },
+
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Todo Application",
+    description: "I led a project to develop a web-based ToDo app, improving its development and deployment on Amazon Web Services (AWS). I used Docker for scalability and consistency and set up a Jenkins CI/CD pipeline for automated building, testing, and deployment. Stack Used : Django, Docker, Jenkins",
+    image: "/images/projects/14.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/KETAKISANTOSHNIKURE/jenkins_CI-CD_Project",
+    previewUrl: "/images/project/5.png",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
+    title: "Super Store Sales Dashboard",
+    description: "Build a Sales Analysis, Product Analysis and Shipping Analysis Dashboard. Stack Used : Microsoft PowerBI",
+    image: "/images/projects/12.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/KETAKISANTOSHNIKURE/SuperStore_Data_Analysis_Sales_Dashboard",
+    previewUrl: "https://drive.google.com/file/d/1FFTbYVWAmBQhIkzvpAlg41ru4YI5KdxA/view?usp=drive_link",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Basic Calculator Application",
+    description: "I  develop user-friendly software applications with a focus on functionality, precision, and intuitive design. Stack Used : Html, Css, Javascript, react, Dockerfile",
+    image: "/images/projects/16.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/KETAKISANTOSHNIKURE/Calculator_Application",
+    previewUrl: "https://calculator-application-woad.vercel.app/",
   },
 ];
 
@@ -81,7 +83,7 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold text-white pt-20 mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
